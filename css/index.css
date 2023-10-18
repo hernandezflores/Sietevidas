@@ -27,11 +27,32 @@
   margin: 0%;
 }
 
+body{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+body::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../img/FondoDePagina.jpg');
+  background-size: 30vw;
+  background-repeat: repeat;
+  opacity: 0.5;
+  z-index: -2;
+}
+
 /* MAIN */
 
 /* PRESENTACIÓN */
 .space-top {
   position: relative;
+  width: 100%;
   height: 15vw;
 }
 
@@ -42,19 +63,6 @@
   z-index: 3;
 }
 
-.space-top::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url('/img/fondo-multi.jpg');
-  background-repeat: repeat;
-  background-size: 11vw;
-  opacity: 0.5;
-  z-index: -1;
-}
 
 /* MEDIA QUERY SPACE TOP */
 
@@ -109,7 +117,7 @@
 .wp-block-cover {
   border-top: 7px rgba(44, 44, 44, 0.6)solid;
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 90vh;
   overflow: hidden;
 }
@@ -149,9 +157,11 @@ h1 {
   align-items: center;
   align-content: center;
   height: 14vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
   text-align: center;
   font-family: "snig";
-  font-size: 2vw;
+  font-size: 1.8vw;
   color: rgb(247, 162, 242);
   border: outset 0.1vw grey;
   border-radius: 1vw 1vw 1vw 1vw;
@@ -277,22 +287,9 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 20vw;
+  width: 100%;
 }
 
-.s3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  background-image: url('/img/fondo-multi.jpg');
-  background-repeat: repeat;
-  background-size: 20vw;
-  opacity: 0.5;
-  z-index: -1;
-}
 
 
 .section-div .gato-curioso {
@@ -675,22 +672,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 18vw;
-}
-
-.s5::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  background-image: url('/img/fondo-multi.jpg');
-  background-repeat: repeat;
-  background-size: 20vw;
-  opacity: 0.5;
-  z-index: -1;
 }
 
 .section-div5 .gato-curioso5 {
@@ -724,12 +707,6 @@ h1 {
 }
 
 
-/* body {
-  background-image: url(/img/fondomulti.jpg);
-} */
-
-
-
 /*----------- CARD OTRAS PÁGINAS ------------------*/
 
 .section1 {
@@ -739,11 +716,9 @@ h1 {
   align-content: center;
   background-image: url(/img/pre-footer.jpg);
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  width: 100vw;
+  width: 100%;
   height: 29vw;
-  background-size: 100vw;
 }
 
 .fondo-card {
@@ -978,8 +953,6 @@ h1 {
 
   .card-index{
     justify-content: space-between;
-    /* width: 100vw;
-    height: auto; */
     overflow: auto;
     padding-left: 20vw;
     padding-right: 20vw;

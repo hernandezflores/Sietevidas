@@ -31,6 +31,27 @@
     margin: 0;
   }
 
+  body{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../img/FondoDePagina.jpg');
+    background-size: 30vw;
+    background-repeat: repeat;
+    opacity: 0.5;
+    z-index: -2;
+  }
+
+
   /* div atras header */
 
   .space-top {
@@ -45,20 +66,6 @@
     z-index: 3;
   }
   
-  .space-top::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url('/img/fondo-multi.jpg');
-    background-repeat: repeat;
-    background-size: 11vw;
-    opacity: 0.5;
-    z-index: -1;
-  }
-  
   /* MEDIA QUERY SPACE TOP */
   
   @media (max-width: 1024px) {
@@ -71,9 +78,6 @@
         height: 15vw;
     }
   
-    .space-top::before {
-        background-size: 25vw;
-    }
   }
   
   @media (max-width: 768px) {
@@ -86,9 +90,6 @@
         height: 15vw;
     }
   
-    .space-top::before {
-        background-size: 25vw;
-    }
   }
   
   @media (max-width: 480px) {
@@ -101,9 +102,6 @@
         height: 16vw;
     }
   
-    .space-top::before {
-        background-size: 25vw;
-    }
   }
 
   /* -------- */
