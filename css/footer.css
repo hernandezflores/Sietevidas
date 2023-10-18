@@ -19,7 +19,7 @@ footer {
     width: 70vw;
     height: 28vw;
     border-radius: 6vw;
-    background-color: rgba(48, 48, 48, 0.7);
+    background-color: rgba(1, 1, 1, 0.7);
     border: outset .1vw;
     box-shadow: .5vw .5vw .5vw .5vw rgb(2, 2, 2);
 
@@ -47,7 +47,7 @@ footer {
 .redes-flex {
     font-size: 1.5vw;
     padding: 1vw;
-    color: rgb(247, 162, 242);
+    color: rgba(163,240,231,0.8);
     border: outset 0.1vw grey;
     border-radius: 1vw 1vw 1vw 1vw;
     background-color: rgba(0, 0, 0, 0.5);
@@ -75,11 +75,11 @@ footer {
     align-items: center;
     text-decoration: none;
     gap: 1vw;
-    color: rgba(126, 2, 117, 0.959);
+    color: rgba(1,1,1,0.9);
     font-size: 2vw;
     border: outset 0.1vw rgb(0, 0, 0);
     border-radius: 1vw 1vw 1vw 1vw;
-    background-color: rgba(139, 139, 139, 0.8);
+    background-color: rgba(245, 245, 245, 0.2);
     box-shadow: .1vh .1vw .1vh .1vw rgb(39, 39, 39);
     height: 4vw;
     width: 17vw;
