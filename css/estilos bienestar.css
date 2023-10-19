@@ -263,7 +263,7 @@ body{
     justify-content: space-between;
     border-top: 7px rgba(221, 120, 153, 0.8)solid;
     padding: 0vw;
-
+    background-color: rgb(247, 240, 248);
 }
 
 .seccion1 {
@@ -393,6 +393,7 @@ body{
     border: 2px solid rgb(209, 161, 207);
     border-top: 7px rgba(221, 120, 153, 0.8)solid;
     box-shadow: 0 0 900px rgba(243, 202, 221, 0.63);
+    background-color: rgb(247, 240, 248);
     display: inline-block;
     justify-content: center;
     min-width: 20vw;
